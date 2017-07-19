@@ -1,0 +1,12 @@
+<template name='home'>
+	<div class="row">
+		<div class="col-1"><button id='refresh' class="btn-secondary btn"><i class="fa fa-refresh" aria-hidden="true"></i></button></div>
+	</div>
+    {{#each brandCampaigns}} {{> brandCampaign}} {{/each}}
+    <div class='row'>
+        <div class="col-md-4">
+            <h3>Unassigned Campaigns</h3>
+        </div>
+    </div>
+    {{#each campaigns}} {{> campaign}} {{/each}}
+</template>

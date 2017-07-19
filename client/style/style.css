@@ -1,0 +1,151 @@
+/* CSS declarations go here */
+
+.fa-delete {
+    color: gray;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.fa-delete:hover {
+    color: red;
+}
+
+.schedule-title {
+    text-align: center;
+}
+
+.badge {
+    font-size: 18px !important;
+}
+
+.action-button {
+    cursor: pointer;
+    color: gray;
+}
+
+#spinner {
+    text-align: center;
+    opacity: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.action-button:hover {
+    color: red;
+}
+
+body {
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.navbar {
+    margin-bottom: 15px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.voffset30 {
+    margin-top: 30px;
+}
+
+.voffset50 {
+    margin-top: 50px;
+}
+
+.completed {
+    color: green;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.helper {
+    color: red;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.text-explain {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.row {
+    margin-top: 15px !important;
+    vertical-align: center;
+}
+
+.column-title {
+    font-weight: bold;
+}
+
+.col-centered {
+    text-align: center;
+}
+
+#character-count-twitter {
+    font-size: 14px;
+    text-align: right;
+}
+
+.beta-version {
+    font-size: 10px;
+    vertical-align: sub;
+}
+
+footer {
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+.indicator-label {
+    text-align: center;
+    font-size: 14px;
+}
+
+.indicator {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

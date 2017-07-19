@@ -1,0 +1,38 @@
+<template name='campaign'>
+    <div class='row row-campaign'>
+        <div class="col-md-1">
+            <span class="badge badge-{{statusColor}}">{{status}}</span>
+        </div>
+        <div class="col-md-2">
+            <span class="badge badge-primary">{{objective}}</span>
+        </div>
+
+        <div class="col-md-5">
+            <a href='/campaigns/{{_id}}'>{{name}}</a>
+        </div>
+        <!--      <div class="col-md-2">
+            {{campaignId}}
+        </div> -->
+        {{#if noBrand}}
+        <div class="col-md-2">
+            <select class='brand-select form-control' id='brand-{{_id}}'>
+                <option id='null'>Select Brand</option>
+                {{#each brands}} {{> brandSelect}}{{/each}}
+            </select>
+        </div>
+        {{else}}
+        <div class="col-md-1">
+            <div class='indicator-label'>Click Rate</div>
+            <div class='indicator'>{{clickRate}}</div>
+        </div>
+        <div class="col-md-1">
+            <div class='indicator-label'>Conversion</div>
+            <div class='indicator'>{{conversion}}</div>
+        </div>
+        <div class="col-md-1">
+            <div class='indicator-label'>Cost per Action</div>
+            <div class='indicator'>{{actionCost}}</div>
+        </div>
+        {{/if}}
+    </div>
+</template>

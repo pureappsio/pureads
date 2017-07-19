@@ -1,0 +1,11 @@
+<template name='brands'>
+    <div class='row'>
+        <div class="col-md-3">
+            <input type="text" class='form-control' id='brand-name'>
+        </div>
+        <div class="col-md-3">
+            <button id='add-brand' class='btn btn-primary'>Create Brand</button>
+        </div>
+    </div>
+    {{#each brands}} {{> brand}} {{/each}}
+</template>

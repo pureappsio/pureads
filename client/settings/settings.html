@@ -1,0 +1,43 @@
+<template name='settings'>
+    <h3>Facebook Accounts</h3>
+    <div class='row'>
+        <div class="col-md-3">
+            <button id='link-facebook' class='btn btn-primary'>Link Your Facebook Account</button>
+        </div>
+        <div class="col-md-3">{{#if isFacebookLinked}}Facebook Linked{{/if}}</div>
+    </div>
+    <div class='row'>
+        <div class="col-md-3">
+            <input type="text" class='form-control' id='ads-account' value={{facebookAdsAccount}}>
+        </div>
+        <div class="col-md-3">
+            <button id='link-facebook-ad' class='btn btn-primary'>Set Facebook Ads Account</button>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-md-6">
+            <button id='import-campaigns' class='btn btn-warning'>Import Campaigns</button>
+        </div>
+    </div>
+    <!--   <h3>Add Integration</h3>
+    <div class='row'>
+        <div class='col-md-1'>Type: </div>
+        <div class='col-md-2'>
+            <select class='form-control' id='integration-type'>
+                <option value='purepress'>PurePress</option>
+            </select>
+        </div>
+        <div class='col-md-1'>URL: </div>
+        <div class='col-md-3'>
+            <input class='form-control' id='integration-url'>
+        </div>
+        <div class='col-md-1'>Key: </div>
+        <div class='col-md-2'>
+            <input class='form-control' id='integration-key'>
+        </div>
+        <div class='col-md-2'>
+            <button id='add-integration' class='btn btn-block btn-primary'>Link</button>
+        </div>
+    </div>
+    <h3>Integrations</h3> {{#each integrations}} {{> integration}} {{/each}} -->
+</template>
